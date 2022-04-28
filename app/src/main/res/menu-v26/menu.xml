@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Appels"
+        android:id="@+id/appels">
+        <menu>
+            <item
+                android:id="@+id/appels_urgence"
+                android:title="Appels urgence"
+           android:icon="@android:drawable/ic_menu_send"
+                android:iconTintMode="add">
+
+            </item>
+            <item
+                android:id="@+id/appels_normal"
+                android:title="appels normal">
+            </item>
+        </menu>
+    </item>
+
+
+
+
+
+
+
+
+
+    <item android:title="SMS"
+        android:id="@+id/sms">
+        <menu>
+            <item
+                android:id="@+id/sms_urgence"
+                android:title="sms urgence">
+            </item>
+            <item
+                android:id="@+id/sms_normal"
+                android:title="sms normal">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Camera"
+        android:id="@+id/camera">
+
+    </item>
+    <item android:title="Quitter"
+        android:id="@+id/quitter">
+
+    </item>
+</menu>

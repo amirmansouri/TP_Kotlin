@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TP_kotlin</string>
+    <string name="txt" translatable="true">welcome to my first android app</string>
+</resources>
