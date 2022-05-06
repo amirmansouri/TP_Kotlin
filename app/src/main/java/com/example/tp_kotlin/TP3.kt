@@ -11,14 +11,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.telephony.SmsManager
+import android.text.TextUtils
 import android.text.style.BackgroundColorSpan
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.graphics.green
+import androidx.core.graphics.toColorInt
 import com.example.tp_kotlin.R.menu.menu
 import java.text.SimpleDateFormat
 import java.util.*
@@ -29,6 +33,12 @@ class TP3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tp3)
         val btn = findViewById<Button>(R.id.btn)
+      val text =   findViewById<TextView>(R.id.textView)
+        text.text= " COMPTE-RENDU" + " AMIR MANSOUR " + " & " + " LINA KHATAT " + " & "+" AMENI RJAB"
+        text.setSingleLine()
+        text.ellipsize= TextUtils.TruncateAt.MARQUEE
+        text.marqueeRepeatLimit= -1
+        text.isSelected=true
         btn.setOnClickListener {
 
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
