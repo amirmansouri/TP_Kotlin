@@ -44,8 +44,6 @@ class TP3 : AppCompatActivity() {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(intent, 100);
             //  uploadImag();
-
-
         }
     }
 
